@@ -14,7 +14,7 @@ int main()
 
 	std::shared_ptr<QuadTree> qt = std::make_unique<QuadTree>(boundary, 4);
 
-	for (size_t i{}; i < 5000; i++)
+	for (size_t i{}; i < 500; i++)
 	{
 		std::shared_ptr<Point> p = std::make_unique<Point>(rand() % 400 + 1, rand() % 400 + 1);
 		qt->Insert(*p);
